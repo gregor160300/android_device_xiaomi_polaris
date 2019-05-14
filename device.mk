@@ -15,8 +15,7 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
 
 # Properties
 -include $(LOCAL_PATH)/device-props.mk
@@ -27,6 +26,13 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Inherit from sdm845-common
 $(call inherit-product, device/xiaomi/sdm845-common/sdm845.mk)
+
+# Playground for GoogleCamera
+PRODUCT_PACKAGES += \
+    PlaygroundMod
+
+# GoogleCamera
+$(call inherit-product, packages/apps/GoogleCameraMod/config.mk)
 
 # Device fstab
 PRODUCT_PACKAGES += \
@@ -49,6 +55,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
     $(LOCAL_PATH)/keylayout/uinput-fpc.kl:system/usr/keylayout/uinput-fpc.kl \
     $(LOCAL_PATH)/keylayout/uinput-goodix.kl:system/usr/keylayout/uinput-goodix.kl
+
+# Wallpapers
+PRODUCT_PACKAGES += \
+    WallpapersBReel2018
 
 # NFC
 PRODUCT_PACKAGES += \
