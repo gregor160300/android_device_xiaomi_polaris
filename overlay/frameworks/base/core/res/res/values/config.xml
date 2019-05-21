@@ -142,7 +142,6 @@
 	<bool name="config_allowAutoBrightnessWhileDozing">false</bool>
 	<fraction name="config_autoBrightnessAdjustmentMaxGamma">100.0%</fraction>
 	<fraction name="config_screenAutoBrightnessDozeScaleFactor">100.0%</fraction>
-	<bool name="config_allowAutoBrightnessWhileDozing">false</bool>
 	<bool name="config_automatic_brightness_available">true</bool>
 	<bool name="config_displayBrightnessBucketsInDoze">false</bool>
 	<bool name="config_skipScreenOnBrightnessRamp">false</bool>
