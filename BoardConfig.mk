@@ -14,6 +14,7 @@ TARGET_OTA_ASSERT_DEVICE := polaris
 
 # Kernel
 TARGET_KERNEL_CONFIG := polaris_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm845
 
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
